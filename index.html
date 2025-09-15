@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-image" id="backgroundImage"></div>
+        <div class="background-overlay"></div>
+    </div>
+    
+    <div class="container">
+        <!-- Time and Date Section -->
+        <div class="time-section">
+            <div class="time" id="time">12:00</div>
+            <div class="date" id="date">Wednesday, June 25, 2025</div>
+        </div>
+        
+        <!-- Website Categories -->
+        <div class="categories-container" id="categoriesContainer">
+            <!-- Categories will be dynamically generated -->
+        </div>
+        
+        <!-- Settings Button -->
+        <button class="settings-btn" id="settingsBtn">⚙️</button>
+        
+        <!-- Settings Modal -->
+        <div class="settings-modal" id="settingsModal">
+            <div class="settings-content">
+                <h3>Settings</h3>
+                
+                <div class="setting-item">
+                    <label for="searchTerm">Unsplash Search Term:</label>
+                    <input type="text" id="searchTerm" placeholder="nature, abstract, city...">
+                    <small>Change the theme of your background images</small>
+                </div>
+                
+                <div class="setting-item">
+                    <label>Add Custom Website:</label>
+                    <div class="add-website-form">
+                        <input type="text" id="websiteUrl" placeholder="https://example.com">
+                        <input type="text" id="websiteName" placeholder="Website Name">
+                        <input type="text" id="websiteDesc" placeholder="Description">
+                        <select id="websiteCategory">
+                            <option value="social">Social Media</option>
+                            <option value="productivity">Productivity</option>
+                            <option value="entertainment">Entertainment</option>
+                            <option value="custom">Custom Category</option>
+                        </select>
+                        <input type="text" id="customCategoryName" placeholder="Category Name" style="display: none;">
+                        
+                        <!-- Website Preview Box -->
+                        <div class="website-preview-container">
+                            <div class="preview-box" id="previewBox">
+                                <div class="preview-placeholder">
+                                    <span>Enter URL above and click here to preview</span>
+                                    <small>We'll capture a 1024x1024 screenshot</small>
+                                </div>
+                                <iframe 
+                                    id="previewIframe" 
+                                    style="display: none;"
+                                    width="1024" 
+                                    height="1024"
+                                    sandbox="allow-same-origin allow-scripts"
+                                ></iframe>
+                                <div class="loading-indicator" style="display: none;">
+                                    <div class="spinner"></div>
+                                    <span>Loading website...</span>
+                                </div>
+                            </div>
+                            <div class="preview-controls" style="display: none; margin-top: 10px;">
+                                <button id="captureBtn">📸 Capture Screenshot</button>
+                                <button id="retryBtn">🔄 Retry</button>
+                            </div>
+                        </div>
+                        
+                        <button id="addWebsiteBtn">Add Website</button>
+                    </div>
+                </div>
+                
+                <div class="setting-item">
+                    <label>Default Sorting:</label>
+                    <div class="setting-group">
+                        <div>
+                            <label for="defaultSort">Sort Method:</label>
+                            <select id="defaultSort">
+                                <option value="default">Default Order</option>
+                                <option value="alphabetical">A-Z</option>
+                                <option value="lastUsed">Last Used</option>
+                                <option value="mostUsed">Most Used</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="setting-item">
+                    <label>Background Settings:</label>
+                    <button id="refreshBgBtn">🔄 Refresh Background</button>
+                    <button id="resetBtn">🔧 Reset to Defaults</button>
+                </div>
+                
+                <button class="close-settings" id="closeSettings">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
