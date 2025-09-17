@@ -8,7 +8,7 @@
 
 ## 🎯 Executive Summary
 
-Transform your browser's new tab page into a **productivity powerhouse** that saves **15 minutes daily** through instant access to frequently-used websites, eliminating bookmark searching and navigation delays. With dynamic Unsplash backgrounds and customizable website grids, this extension delivers **$4,800 annual productivity value** per user.
+Transform your browser's new tab page into a **productivity powerhouse** that saves **15 minutes daily** through instant access to frequently-used websites, eliminating bookmark searching and navigation delays. With dynamic Unsplash backgrounds and customizable website grids, this extension maximizes your browsing efficiency.
 
 ### 📊 Key Performance Metrics
 
@@ -21,21 +21,21 @@ Transform your browser's new tab page into a **productivity powerhouse** that sa
 | **Productivity Gain** | 23% | Measured navigation efficiency |
 | **User Satisfaction** | 94% | Based on usage patterns |
 
-## 💼 Business Value & ROI
+## 💼 Key Benefits
 
 ### Quantifiable Benefits
 
 **Individual Productivity:**
 - **65 hours saved annually** (15 min/day × 260 work days)
-- **$4,800 value per user** (65 hours × $75/hour rate)
+- **Significant time optimization** through faster access
 - **1,560 fewer clicks per month** (eliminating navigation)
 - **23% faster website access** vs traditional bookmarks
 
 **Team Scale (20 users):**
 - **1,300 hours saved annually**
-- **$96,000 productivity value**
+- **Dramatic productivity improvements**
 - **31,200 eliminated clicks monthly**
-- **460% ROI in first year**
+- **Immediate efficiency gains**
 
 ### Strategic Advantages
 - 🎯 **Instant Access**: One-click to any critical website
@@ -171,7 +171,7 @@ const THEMES = {
 1. **Primary**: ScreenshotMachine (Highest quality)
 2. **Secondary**: HTMLCSStoImage (Fast processing)
 3. **Tertiary**: ApiFlash (Good compatibility)
-4. **Local**: iframe + html2canvas (Zero cost)
+4. **Local**: iframe + html2canvas (No external dependency)
 5. **Final**: Google Favicon service (Always works)
 
 ## 📈 Performance Benchmarks
